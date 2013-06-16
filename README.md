@@ -1,4 +1,1 @@
-golf-handicap
-=============
-
-Calculate a golf handicap in several different programming languages
+Calculate a golf handicap in several different programming languages.  Using the instructions found at [About.com Golf Handicap](http://golf.about.com/cs/handicapping/a/howcalculated.htm), calculate golf handicap.  Use the data files found in /data (js, xml, and csv format), to parse and output the right correct handicap.
