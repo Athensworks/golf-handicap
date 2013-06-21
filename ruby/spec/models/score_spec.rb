@@ -7,4 +7,20 @@ describe Score do
     expect(score.rating).to eq(70.0)
     expect(score.slope).to eq(121)
   end
+  
+  it "should build a score from a JSON parse" do
+    json = %q{{
+        "par": 70,
+        "rating": 70.0,
+        "score": 84,
+        "slope": 113
+    }}
+    
+    hash = JSON.parse(json)
+    score = Score.new(hash)
+    
+    expect(score.score).to eq(84)
+    expect(score.rating).to eq(70.0)
+    expect(score.slope).to eq(113)
+  end
 end
