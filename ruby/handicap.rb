@@ -8,6 +8,15 @@ class Golfer
   
   def initialize(name)
     @name = name
+    @scores = []
+  end
+  
+  def add_score(score)
+    @scores << score
+  end
+  
+  def scores
+    @scores
   end
 end
 
