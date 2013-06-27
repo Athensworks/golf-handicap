@@ -44,7 +44,7 @@ class Golfer
   end
   
   def handicap
-    ((lowest_differentials.inject(0.0){|sum, val| val + sum} / lowest_differentials.count) * 0.96).round(1)
+    ((lowest_differentials.inject(&:+) / lowest_differentials.count) * 0.96).round(1)
   end
   
   private
